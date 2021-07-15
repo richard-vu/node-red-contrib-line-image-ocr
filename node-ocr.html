@@ -1,0 +1,34 @@
+<script type="text/javascript">
+  RED.nodes.registerType("node-ocr", {
+    category: "CLOVA OCR",
+    color: "#32CDC8",
+    defaults: {
+      name: { value: "CLOVA OCR PARAM" },
+      XOCRSECRET: {
+        value: "",
+        required: true,
+      },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "icon.png",
+    label: function () {
+      return this.name || "CLOVA OCR";
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="node-ocr">
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+      <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+  <div class="form-row">
+    <label for="node-input-XOCRSECRET"><i class="fa fa-tag"></i>X-OCR-SECRET</label>
+    <input type="text" id="node-input-XOCRSECRET" placeholder="X-OCR-SECRET">
+</div>
+</script>
+
+<script type="text/html" data-help-name="node-ocr">
+  <p>A simple node that converts the message payloads into all line-reply-token of LINE characters</p>
+</script>

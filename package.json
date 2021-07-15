@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-line-image-ocr",
+  "version": "0.0.917",
+  "description": "Optical Character Recognition from LINE Message using NCLOUD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richard-vu/node-red-contrib-line-image-ocr.git"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "lower-case": "node-ocr.js"
+    }
+  },
+  "author": "Richard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richard-vu/node-red-contrib-line-image-ocr/issues"
+  },
+  "homepage": "https://github.com/richard-vu/node-red-contrib-line-image-ocr#readme"
+
+}
